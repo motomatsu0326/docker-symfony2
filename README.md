@@ -30,7 +30,7 @@ http://localhost:8888/web
 http://localhost:1080
 ```
 
-④ 下記URLにアクセスしてadminer（db管理ツール）に接続確認
+⑥下記URLにアクセスしてadminer（db管理ツール）に接続確認
 ```
 http://localhost:8089
 ```
