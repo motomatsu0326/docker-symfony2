@@ -27,7 +27,7 @@ http://localhost:8888/web
 
 ⑤下記URLにアクセスしてMailCatcher（メールサーバー）に接続確認
 ```
-http://localhost:1080/
+http://localhost:1080
 ```
 
 ④ 下記URLにアクセスしてadminer（db管理ツール）に接続確認
