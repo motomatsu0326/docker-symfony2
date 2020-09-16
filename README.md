@@ -20,9 +20,9 @@ $ composer install
 $ exit
 ```
 
-④下記URLに接続してEC-CUBEの初期設定
+④下記URLに接続確認
 ```
-http://localhost:8888/web
+http://localhost:8080/web
 ```
 
 ⑤下記URLにアクセスしてMailCatcher（メールサーバー）に接続確認
@@ -32,5 +32,5 @@ http://localhost:1080
 
 ⑥下記URLにアクセスしてadminer（db管理ツール）に接続確認
 ```
-http://localhost:8089
+http://localhost:8081
 ```
