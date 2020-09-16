@@ -19,6 +19,7 @@ services:
       dockerfile: Dockerfile
     volumes:
       - $PWD/symfony:/var/www/html:delegated
+      - $PWD/docker/php-apache/php.ini:/usr/local/etc/php/php.ini:delegated
     ports:
       - 8080:80
     depends_on:
