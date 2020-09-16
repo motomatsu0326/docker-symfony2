@@ -4,7 +4,7 @@ dockerでSymfony2.8の開発環境を構築
 ## 環境構築手順
 ※ 前提条件：Docker, Docker Composeを導入済みであること
 
-①postgresデータ出力ディレクトリのgitkeepを削除(削除しないとコンテナ作成時にエラーになる)
+①postgresデータ出力ディレクトリのgitkeepを削除（削除しないとコンテナー作成時エラーになる）
 ```
 rm docker/postgres/data/.gitkeep
 ```
@@ -30,12 +30,7 @@ $ exit
 http://localhost:8080/web
 ```
 
-⑥下記URLにアクセスしてMailCatcher（メールサーバー）に接続確認
-```
-http://localhost:1080
-```
-
-⑦下記URLにアクセスしてadminer（db管理ツール）に接続確認
+⑥下記URLにアクセスしてadminer（db管理ツール）に接続確認
 ```
 http://localhost:8081
 ```

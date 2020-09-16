@@ -25,12 +25,6 @@ services:
     depends_on:
       - db
 
-  smtp:
-    image: schickling/mailcatcher
-    ports:
-      - "1080:1080"
-      - "1025:1025"
-
   adminer:
     image: adminer:4.7-standalone
     environment:
