@@ -39,3 +39,11 @@ http://localhost:1080
 ```
 http://localhost:8081
 ```
+※データベースの接続情報は下記の通り
+| 設定項目 | 設定値 |
+| :---: | :---: |
+| データーベース種別 | PostgreSQL |
+| サーバー | db |
+| ユーザー名 | postgres |
+| パスワード | postgres |
+| データベース | symfony |
