@@ -4,33 +4,38 @@ dockerでSymfony2.8の開発環境を構築
 ## 環境構築手順
 ※ 前提条件：Docker, Docker Composeを導入済みであること
 
-①コンテナーを作成し実行
+①postgresデータ出力ディレクトリのgitkeepを削除
+```
+rm docker/postgres/data/.gitkeep
+```
+
+②コンテナーを作成し実行
 ```
 $ docker-compose up -d
 ```
 
-②Webサーバーのコンテナーに接続
+③Webサーバーのコンテナーに接続
 ```
-$ docker exec -it docker-symfony2_web_1 bash
+$ docker exec -it [リポジトリ名]_web_1 bash
 ```
 
-③コンテナー内で依存ライブラリをインストール
+④コンテナー内で依存ライブラリをインストール
 ```
 $ composer install
 $ exit
 ```
 
-④下記URLに接続確認
+⑤下記URLに接続確認
 ```
 http://localhost:8080/web
 ```
 
-⑤下記URLにアクセスしてMailCatcher（メールサーバー）に接続確認
+⑥下記URLにアクセスしてMailCatcher（メールサーバー）に接続確認
 ```
 http://localhost:1080
 ```
 
-⑥下記URLにアクセスしてadminer（db管理ツール）に接続確認
+⑦下記URLにアクセスしてadminer（db管理ツール）に接続確認
 ```
 http://localhost:8081
 ```
